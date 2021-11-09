@@ -1,5 +1,5 @@
 # BlazorServerAppBulmaTemplate
-Blazor Server App Template with Bulma.
+Blazor Server App Template with [Bulma](https://bulma.io).
 
 ## Installation
 
