@@ -1,0 +1,72 @@
+﻿
+
+
+<nav class="navbar " role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+
+        <a @onclick="ToggleNavMenu" role="button" class="navbar-burger @NavMenuCssClass" aria-label="menu"
+           aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div  class="navbar-menu @NavMenuCssClass">
+        <div class="navbar-start">
+            <a class="navbar-item" href="" Match="NavLinkMatch.All">
+                <span class="icon-text is-small">
+                    <span class="icon">
+                        <i class="fas fa-home"></i>
+                    </span>
+                    <span>Home</span>
+                </span>
+            </a>
+
+            <a class="navbar-item" href="counter">
+                <span class="icon-text is-small">
+                    <span class="icon">
+                        <i class="fas fa-stopwatch-20"></i>
+                    </span>
+                    <span>Counter</span>
+                </span>
+            </a>
+
+            <a class="navbar-item" href="fetchdata">
+                <span class="icon-text is-small">
+                    <span class="icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </span>
+                    <span>Fetch data</span>
+                </span>
+                
+            </a>
+        </div>
+
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button" href="https://docs.microsoft.com/aspnet/" target="_blank">
+                        <strong>About</strong>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "is-active" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+
