@@ -11,5 +11,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\js\" />
+    <Folder Include=".template.config\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".template.config\template.json" />
   </ItemGroup>
 </Project>

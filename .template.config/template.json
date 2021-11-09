@@ -1,0 +1,10 @@
+﻿{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Richard R. Manzke",
+  "classifications": [ "Web", "Blazor" ],
+  "identity": "mzke.BlazorServerApp.Bulma",
+  "name": "Blazor Server App (Bulma)",
+  "shortName": "blazorserverbulma",
+  "sourceName": "BlazorServerAppBulmaTemplate"
+}
+
